@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Cloud</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1> Biblioteca Cloud</h1>
+
+    <form id="bookForm">
+
+        <input
+            type="text"
+            id="titulo"
+            placeholder="Título"
+            required
+        >
+
+        <input
+            type="text"
+            id="autor"
+            placeholder="Autor"
+            required
+        >
+
+        <input
+            type="text"
+            id="categoria"
+            placeholder="Categoría"
+            required
+        >
+
+        <input
+            type="number"
+            id="anio"
+            placeholder="Año"
+            required
+        >
+
+        <button type="submit">
+            Guardar Libro
+        </button>
+
+    </form>
+
+    <h2>Listado de Libros</h2>
+
+    <div id="books"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
