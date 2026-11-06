@@ -1,6 +1,6 @@
 body{
     font-family: Arial, sans-serif;
-    background:#f4f4f4;
+    background:#008631;
     margin:0;
     padding:30px;
 }
@@ -27,7 +27,7 @@ input{
 }
 
 button{
-    background:#16a34a;
+    background:#D9F7CB;
     color:white;
     border:none;
     padding:10px;
