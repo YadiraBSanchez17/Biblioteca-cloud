@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+    padding:30px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+}
+
+h1{
+    text-align:center;
+}
+
+form{
+    display:grid;
+    gap:10px;
+}
+
+input{
+    padding:10px;
+}
+
+button{
+    background:#16a34a;
+    color:white;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+}
+
+.book{
+    border:1px solid #ddd;
+    margin-top:10px;
+    padding:15px;
+    border-radius:8px;
+}
