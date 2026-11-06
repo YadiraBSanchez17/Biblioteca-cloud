@@ -1,42 +1,168 @@
-body{
-    font-family: Arial, sans-serif;
-    background:#D9F7CB;
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b
+    );
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
     padding:30px;
 }
 
 .container{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    padding:25px;
-    border-radius:10px;
+    width:100%;
+    max-width:1000px;
+
+    background:rgba(255,255,255,0.95);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.25);
 }
 
 h1{
     text-align:center;
+
+    color:#0f172a;
+
+    margin-bottom:30px;
+
+    font-size:2.5rem;
+}
+
+h2{
+    margin-top:35px;
+    margin-bottom:20px;
+
+    color:#1e293b;
 }
 
 form{
     display:grid;
-    gap:10px;
+    grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
+
+    gap:15px;
 }
 
 input{
-    padding:10px;
+    padding:14px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+input:focus{
+    outline:none;
+
+    border-color:#3b82f6;
+
+    box-shadow:
+        0 0 0 3px rgba(59,130,246,.2);
 }
 
 button{
-    background:#98A393;
-    color:white;
+    padding:14px;
+
     border:none;
-    padding:10px;
+
+    border-radius:10px;
+
     cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+form button{
+    background:#2563eb;
+    color:white;
+}
+
+form button:hover{
+    background:#1d4ed8;
+}
+
+#books{
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fill,minmax(280px,1fr));
+
+    gap:20px;
 }
 
 .book{
-    border:1px solid #ddd;
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.08);
+
+    border-left:5px solid #2563eb;
+
+    transition:.3s;
+}
+
+.book:hover{
+    transform:translateY(-5px);
+}
+
+.book h3{
+    color:#0f172a;
+
+    margin-bottom:10px;
+}
+
+.book p{
+    margin-bottom:8px;
+    color:#475569;
+}
+
+.book button{
+    margin-right:8px;
     margin-top:10px;
-    padding:15px;
-    border-radius:8px;
+}
+
+.book button:nth-child(5){
+    background:#f59e0b;
+    color:white;
+}
+
+.book button:nth-child(6){
+    background:#ef4444;
+    color:white;
+}
+
+.book button:nth-child(7){
+    background:#10b981;
+    color:white;
+}
+
+.book button:hover{
+    opacity:.9;
 }
